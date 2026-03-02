@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f4f6f8;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #012169, #C8102E);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* Sections */
+section {
+    padding: 60px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+section.reverse {
+    flex-direction: row-reverse;
+}
+
+.text {
+    flex: 1;
+}
+
+.text h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #012169;
+}
+
+.text p {
+    margin-bottom: 15px;
+}
+
+/* Photo Cards */
+.photo-card {
+    flex: 1;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* REMOVE fixed height so YOU control image size */
+    min-height: auto;
+}
+
+/* Image inside card - FULLY CUSTOMIZABLE */
+.photo-card img {
+    /* You control size manually in HTML or here */
+
+    /* Example options (UNCOMMENT if you want automatic sizing) */
+    /* width: 100%; */
+    /* max-width: 300px/
+    /* height: auto; */
+    width: 150%;
+    height: auto;
+    max-width: 450px;
+
+    border-radius: 8px;
+}
+
+.photo-placeholder {
+    color: green; /* GREEN TEXT for you to easily find */
+    font-weight: bold;
+    text-align: center;
+    width: 500%
+    
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #012169;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    section {
+        flex-direction: column;
+    }
+
+    section.reverse {
+        flex-direction: column;
+    }
+}
